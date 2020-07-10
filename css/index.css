@@ -90,7 +90,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
-    border: grey 1px soo;
+    /* border: grey .5px solid; */
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -255,31 +255,33 @@ li a {
     margin: 20px 2.5%;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 .about-section{
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    margin: 0 auto;
-
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
 
 }
 
-.about-img, .about-text{
-    align-items: center;
-    margin: 0 auto;
-    width: 50%;
+.about-text{
+    width: 100%;
     line-height: 2rem;
+    padding: 20px;
+    border-bottom: black 1px dashed;
 }
+
+
 
 .main-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 40%;
+    width: 800px;
     flex-wrap: wrap;
     margin: 0 auto;
 }
@@ -287,9 +289,25 @@ li a {
 .main-content div{
     display: flex;
     flex-direction: column;
-    width: 40%;
-    
+    justify-content: flex-start;
+    width: 375px;
+    line-height: 3rem;
+    padding: 20px;
+    border-bottom: dashed 1px black;
+    margin: 0 10px;
 }
+
+.main-content a{
+    padding: .5px 5px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 35%;
+    margin-top: 10px;
+}
+
 
 
 /* Targeting all the different children classes of .boxes */
@@ -347,6 +365,11 @@ li a {
 .bottom-content .text-container:last-child {
     padding-right: 0;
 }
+
+.contact-section{
+    padding: 25px;
+}
+
 
 footer {
     width: 100%;
