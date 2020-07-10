@@ -252,6 +252,23 @@ li a {
     justify-content: center;
 }
 
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-content img{
+    
+}
 /* Targeting all the different children classes of .boxes */
 .boxes .box:nth-child(1) {
     background-color: teal;
