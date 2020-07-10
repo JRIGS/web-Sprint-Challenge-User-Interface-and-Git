@@ -3,60 +3,155 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    /* border: grey .5px solid; */
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 30px;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-size: 18px;
     margin-bottom: 15px;
     font-family: 'Rubik', sans-serif;
@@ -66,10 +161,62 @@ p {
     line-height: 1.4;
 }
 
-.container {
+.main-container {
     width: 800px;
     margin: 0 auto;
 }
+
+
+header div {
+    width: 960px;
+    max-width: 100%;
+    padding: 50px;
+    margin: 0 auto;
+}
+
+header div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.main-nav ul {
+    margin: 1em 0 .5em;
+    text-align: center;
+}
+
+.main-nav li {
+    display: inline;
+}
+
+.main-nav a {
+    display: inline-block;
+    /* Added the spacing manually */
+    padding: .5em 1.5em;
+}
+
+header div img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-container{
+    display: flex;
+}
+
+/* Cleaning up nav bar listed items */
+li a {
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.top-content div img {
+    margin-bottom: 25px;
+}
+
 
 .top-content {
     display: flex;
@@ -82,7 +229,7 @@ p {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -108,9 +255,102 @@ p {
     margin: 20px 2.5%;
     color: white;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
+.about-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px;
+
+}
+
+.about-text{
+    width: 100%;
+    line-height: 2rem;
+    padding: 20px;
+    border-bottom: black 1px dashed;
+}
+
+
+
+.main-content{
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.main-content div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 375px;
+    line-height: 3rem;
+    padding: 20px;
+    border-bottom: dashed 1px black;
+    margin: 0 10px;
+}
+
+.main-content a{
+    padding: .5px 5px;
+    width: 150px;
+    text-align: center;
+    text-decoration: none;
+    background-color: white;
+    border: solid 2px black;
+    border-radius: 35%;
+    margin-top: 10px;
+}
+
+
+
+/* Targeting all the different children classes of .boxes */
+.boxes .box:nth-child(1) {
+    background-color: teal;
+}
+
+.boxes .box:nth-child(2) {
+    background-color: gold;
+}
+
+.boxes .box:nth-child(3) {
+    background-color: cadetblue;
+}
+
+.boxes .box:nth-child(4) {
+    background-color: coral;
+}
+
+.boxes .box:nth-child(5) {
+    background-color: crimson;
+}
+
+.boxes .box:nth-child(6) {
+    background-color: forestgreen;
+}
+
+.boxes .box:nth-child(7) {
+    background-color: darkorchid;
+}
+
+.boxes .box:nth-child(8) {
+    background-color: hotpink;
+}
+
+.boxes .box:nth-child(9) {
+    background-color: indigo;
+}
+
+.boxes .box:nth-child(10) {
+    background-color: dodgerblue;
+}
+
 
 .bottom-content {
     display: flex;
@@ -126,6 +366,11 @@ p {
     padding-right: 0;
 }
 
+.contact-section{
+    padding: 25px;
+}
+
+
 footer {
     width: 100%;
     background: black;
@@ -138,9 +383,20 @@ footer nav {
     align-items: center;
     padding: 20px 2%;
     font-size: 14px;
+    margin: 0 auto;
 }
 
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+
+
+@media (min-width: 960px) {
+    header div {
+        justify-content: space-between;
+    }
 }
