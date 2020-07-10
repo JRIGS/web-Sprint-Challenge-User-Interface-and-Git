@@ -90,6 +90,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    border: grey 1px:;
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -114,6 +115,8 @@ body {
 ol,
 ul {
     list-style: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 30px;
 }
 
 blockquote,
@@ -198,6 +201,10 @@ header div img {
     height: auto;
 }
 
+.nav-container{
+    display: flex;
+}
+
 /* Cleaning up nav bar listed items */
 li a {
     color: black;
@@ -256,9 +263,17 @@ li a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin: 0 auto;
+
 
 }
 
+.about-img, .about-text{
+    align-items: center;
+    margin: 0 auto;
+    width: 50%;
+    line-height: 2rem;
+}
 
 .main-content{
     display: flex;
@@ -266,9 +281,7 @@ li a {
     justify-content: space-between;
 }
 
-.main-content img{
-    
-}
+
 /* Targeting all the different children classes of .boxes */
 .boxes .box:nth-child(1) {
     background-color: teal;
