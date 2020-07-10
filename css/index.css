@@ -66,10 +66,56 @@ p {
     line-height: 1.4;
 }
 
-.container {
+.main-container {
     width: 800px;
     margin: 0 auto;
 }
+
+
+header div {
+    width: 960px;
+    max-width: 100%;
+	padding: 50px;
+	margin: 0 auto;
+}
+
+header div{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.main-nav ul {
+	margin: 1em 0 .5em;
+	text-align: center;
+}
+.main-nav li {
+	display: inline;
+}
+.main-nav a {
+    display: inline-block;
+    /* Added the spacing manually */
+	padding: .5em 1.5em;
+}
+
+header div img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+li a{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.top-content div img{
+    padding: 25px;
+}
+
 
 .top-content {
     display: flex;
@@ -143,4 +189,14 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+
+
+@media (min-width: 960px) {
+	header div{
+		justify-content: space-between;
+	}
 }
